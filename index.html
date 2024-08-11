@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Tabel Kriteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manajemen Proyek</h1>
+
+    <!-- Form Input -->
+    <div class="form-container">
+        <h2>Tambah Data</h2>
+        <form id="data-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+
+            <label for="candidate">Kandidat:</label>
+            <input type="text" id="candidate" required>
+
+            <label for="start-date">Tanggal Mulai:</label>
+            <input type="date" id="start-date" required>
+
+            <label for="end-date">Tanggal Akhir:</label>
+            <input type="date" id="end-date" required>
+
+            <label for="progress">Progress Actual (%):</label>
+            <input type="number" id="progress" min="0" max="100" required>
+
+            <button type="submit">Tambah Data</button>
+        </form>
+    </div>
+
+    <!-- Tabel Data -->
+    <div class="table-container">
+        <h2>Data Proyek</h2>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Kandidat</th>
+                    <th>Progress</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Baris tabel akan muncul di sini -->
+            </tbody>
+        </table>
+        <button id="view-graph">Lihat Grafik</button>
+    </div>
+
+    <!-- Grafik -->
+    <div class="graph-container" style="display: none;">
+        <h2>Grafik Progress</h2>
+        <canvas id="progress-chart"></canvas>
+        <button id="close-graph">Tutup Grafik</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

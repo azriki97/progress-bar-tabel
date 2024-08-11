@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.progress-bar-container {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: absolute;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.progress-bar.estimation {
+    background-color: #2196F3; /* Biru untuk estimasi */
+}
+
+.progress-bar.actual {
+    background-color: #4CAF50; /* Hijau untuk actual */
+}
+
